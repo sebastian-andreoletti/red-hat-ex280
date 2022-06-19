@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-storage",
+  "version": "1.0.0",
+  "description": "Run nodejs app in Openshift in order to test storage/volume",
+  "main": "/server/server.js",
+  "scripts": {
+    "start":"node ./server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "openshift",
+    "storage"
+  ],
+  "author": "sebastian.andreoletti@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
