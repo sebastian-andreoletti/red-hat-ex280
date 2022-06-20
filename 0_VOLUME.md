@@ -2,7 +2,7 @@
 
 ## Set Volume
 
-```json
+```
 oc get storageclasses
 oc set volume  deployment/_my_app \
    --add --replace --name pvc-my-app --type pvc \
@@ -10,12 +10,12 @@ oc set volume  deployment/_my_app \
    --claim-mode rwo --mount-path /var/my_app   
 ```
 ### Remove PVC from deployment
-```json
+```
 oc set volume deploy/_my_app --remove --name pvc-my-app
 ```
 
 ### Delete PVC 
-```json
+```
 oc delete pvc/pvc-my-app
 ```
 
