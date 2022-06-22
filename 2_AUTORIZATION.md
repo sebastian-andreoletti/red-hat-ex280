@@ -30,7 +30,21 @@ oc adm groups remove-users     user02
 oc adm groups add-users        ops01
 ```
 
+## ServiceAccount
+
+```
+oc create serviceaccount my-sa
+oc adm policy add-scc-to-user anyuid my-sa
+oc set serviceaccount deploy/_my_app -z my-sa
+```
+
 ## Troubleshoot access control
+
+### Errors when service tries to expose port < 1000
+
+Create a serviceaccount a assign anyid 
+
+### others
 
 ```
 oc policy who-can delete pod
